@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <%- include ('./partials/head.ejs') %>
+  <body>
+    <%- include ('./partials/header.ejs') %>
+    <form action="/messages" method="POST">
+      <p class="form-item">
+        <label for="author">Author: </label>
+        <input type="text" name="author" id="author" required />
+      </p>
+      <p class="form-item">
+        <label for="message">Message: </label>
+        <input type="text" name="message" id="message" required />
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "A simple message board to view and post messages. Built using Express &amp; EJS. First project under express in the Odin project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bibu007/mini-message-board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Bibu007/mini-message-board/issues"
+  },
+  "homepage": "https://github.com/Bibu007/mini-message-board#readme",
+  "dependencies": {
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
+  }
+}
