@@ -1,5 +1,5 @@
 const express = require("express");
-const messagesController = require("../Controllers/messagesController");
+const messagesController = require("../controllers/messagesController");
 const router = express.Router();
 
 router.get("/", messagesController.messageListGet);
