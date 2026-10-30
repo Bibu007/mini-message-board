@@ -1,3 +1,4 @@
+/*
 const express = require("express");
 const app = express();
 
@@ -35,3 +36,23 @@ app.post("/messages", (req, res) => {
 });
 
 app.listen(3005);
+
+*/
+
+const express = require("express");
+const app = express();
+const path = require("node:path");
+const messagesRouter = require("./routes/messagesRouter");
+
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+app.use(express.urlencoded({ extended: true }));
+app.use("/", messagesRouter);
+
+const PORT = process.env.PORT || 3019;
+app.listen(PORT, (error) => {
+  if (error) {
+    throw error;
+  }
+  console.log(`Express app listening on port ${PORT}!`);
+});
